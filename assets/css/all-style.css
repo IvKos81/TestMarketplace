@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 6 version
-*/
-
 @font-face {
 	font-family: Proxima Nova; /*Имя шрифта*/
 	src: url(./../font/proximanova_regular.ttf);
@@ -20,7 +13,7 @@
 .main__page {
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: #171722;
 }
 
 .header {
