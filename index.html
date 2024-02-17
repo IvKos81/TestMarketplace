@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/js/nouislider/nouislider.min.css">
+  <link rel="stylesheet" href="./assets/css/all-style.css">
+  <title>Marketplace</title>
+</head>
+<body>
+  <div class="main__page">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrapper">
+          <form action="post" class="header__form">
+            <div class="top__section">
+              <h1 class="'top__title">Marketplace</h1>
+              <input type="text" id="search" placeholder="Search for a product, flower, etc">
+              <div class="buttons__wrapper">
+                <div class="button__container">
+                  <input type="checkbox" name="choise" id="buds">
+                  <label for="buds">Buds</label>
+                </div>
+                <div class="button__container">
+                  <input type="checkbox" name="choise" id="edible">
+                  <label for="edible">Edible</label>
+                </div>
+                <div class="button__container">
+                  <input type="checkbox" name="choise" id="nonedible">
+                  <label for="nonedible">Non Edible</label>
+                </div>
+                <div class="button__container">
+                  <input type="checkbox" name="choise" id="concentrate">
+                  <label for="concentrate">Concentrate</label>
+                </div>
+              </div>
+            </div>
+            <div class="middle__section">
+              <div class="slider__wrapper">
+                <p class="slider__title">Price Range</p>
+                <div id="price-slider" class="slider"></div>
+                <div class="range__wrapper">
+                  <span class="range1">123</span>
+                  <span class="range2">456</span>
+                </div>
+              </div>
+              <div class="slider__wrapper">
+                <p class="slider__title">THC, %</p>
+                <div id="thc-slider" class="slider"></div>
+                <div class="range__wrapper">
+                  <span class="thc__range1">123</span>
+                  <span class="thc__range2">456</span>
+                </div>
+              </div>
+              <div class="slider__wrapper">
+                <p class="slider__title">CBD, %</p>
+                <div id="cbd-slider" class="slider"></div>
+                <div class="range__wrapper">
+                  <span class="cbd__range1">123</span>
+                  <span class="cbd__range2">456</span>
+                </div>
+              </div>
+              <div class="slider__wraper">
+                <p class="slider__title">Nose</p>
+                <div id="radio-slider" class="radio__slider">
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio1"><label class="lab1" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio2"><label class="lab2" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio3"><label class="lab3" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio4"><label class="lab4" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio5"><label class="lab5" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio6"><label class="lab6" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio7"><label class="lab7" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio8"><label class="lab8" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio9"><label class="lab9" for="1"></label>
+                  </div>
+                  <div class="radio__slider__point">
+                    <input type="radio" name="1" id="radio10"><label class="lab10" for="1"></label>
+                  </div>
+                </div>
+                <div class="range__wrapper">
+                  <span class="radio__range radio__range1">min</span>
+                  <span class="radio__range radio__range2">max</span>
+                </div>
+              </div>
+              
+              <div class="sort__desk">
+                <div class="sort__label">
+                  <img src="./assets/image/Filter.svg" alt="filter" width="24" height="24" class="sort__img">
+                </div>
+                <ul class=" hidden sort__list">Sort By:
+                  <li class="sort__point"><img src="./assets/image/sort1.svg" width="24" height="24" alt="sort"><span class="sort__text" >Date (New first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort2.svg"width="24" height="24" alt="sort""><span class="sort__text ">Date (Old first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort3.svg" width="24" height="24" alt="sort"><span class="sort__text" >Price (High first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort4.svg" width="24" height="24" alt="sort"><span class="sort__text" >Price (Low first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort5.png" width="27" height="24" alt="sort"><span class="sort__text" >Total THC (High first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort6.png" width="27" height="24" alt="sort"><span class="sort__text" >Total THC (Low first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort7.png" width="27" height="24" alt="sort"><span class="sort__text" >Total CBD (High first)</span></li>
+                  <li class="sort__point"><img src="./assets/image/sort8.png" width="27" height="24" alt="sort"><span class="sort__text" >Total CBD (Low first)</span></li>
+                </ul>
+              </div>
+  
+            </div>
+            <div class="lower__section">
+              <span class="result__score">1034,5&nbsp;Results</span>
+              <div class="tags__wrapper">
+                <div class="hidden tag cl1"><span class="tag__title">100% Indica</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag cl2"><span class="tag__title">100% Sativa</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag cl3"><span class="tag__title">>50% Indica</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag cl4"><span class="tag__title">>50 Sativa</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr1"><span class="tag__title">Indoor</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr2"><span class="tag__title">Outdoor</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr3"><span class="tag__title">Greenhouse</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr4"><span class="tag__title">Light Deprivation</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr5"><span class="tag__title">Mixed Light</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag pr6"><span class="tag__title">Other</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz1"><span class="tag__title">Flower</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz2"><span class="tag__title">Pre-Roll Flower</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz3"><span class="tag__title">Pre-Roll Infused</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz4"><span class="tag__title">Pre-Roll Leaf</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz5"><span class="tag__title">Shake</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz6"><span class="tag__title">Smalls</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz7"><span class="tag__title">Trim</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz8"><span class="tag__title">Shake</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz9"><span class="tag__title">Keef</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+                <div class="hidden tag sz10"><span class="tag__title">Fresh Frozen</span><img class="cl1__close close__tag" src="./assets/image/Cancell.svg"width="18" height="19"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <aside class="sidebar">
+          <div class="sidebar__wrapper">
+            <ul class="classification__list">Classification<img src="./assets/image/arrow.svg" alt="arrow" class="arrow arrow1" width="12" height="7">
+              <li class="hidden classification__point"><input type="checkbox" name="classific" id="classific1" class="filter__checkbox"><label for="classific1">100% Indica</label></li>
+              <li class="hidden classification__point"><input type="checkbox" name="classific" id="classific2" class="filter__checkbox"><label for="classific2">100% Sativa</label></li>
+              <li class="hidden classification__point"><input type="checkbox" name="classific" id="classific3" class="filter__checkbox"><label for="classific3">>50% Indica</label></li>
+              <li class="hidden classification__point"><input type="checkbox" name="classific" id="classific4" class="filter__checkbox"><label for="classific4">>50% Sativa</label></li>
+            </ul>
+            <ul class="production__list">Production Method<img src="./assets/image/arrow.svg" alt="arrow" class="arrow arrow2" width="12" height="7">
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production1" class="filter__checkbox"><label for="production1">Indoor</label></li>
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production2" class="filter__checkbox"><label for="production2" ">Outdoor</label></li>
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production3" class="filter__checkbox"><label for="production3" >Greenhouse</label></li>
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production4" class="filter__checkbox"><label for="production4" >Light Deprivation</label></li>
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production5" class="filter__checkbox"><label for="production5" >Mixed Light</label></li>
+              <li class="hidden production__point"><input type="checkbox" name="classific" id="production6" class="filter__checkbox"><label for="production6" >Other</label></li>
+            </ul>
+            <ul class="size__list">Size<img src="./assets/image/arrow.svg" alt="arrow" class="arrow arrow3" width="12" height="7">
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size1" class="filter__checkbox"><label for="size1">Flower</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size2" class="filter__checkbox"><label for="size2">Pre-Roll Flower</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size3" class="filter__checkbox"><label for="size3">Pre-Roll Infused</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size4" class="filter__checkbox"><label for="size4">Pre-Roll Leaf</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size5" class="filter__checkbox"><label for="size5">Shake</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size6" class="filter__checkbox"><label for="size6">Samlls</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size7" class="filter__checkbox"><label for="size7">Trim</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size8" class="filter__checkbox"><label for="size8">Shake</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size9" class="filter__checkbox"><label for="size9">Keef</label></li>
+              <li class="hidden size__point"><input type="checkbox" name="classific" id="size10" class="filter__checkbox"><label for="size10">Fresh Frozen</label></li>
+            </ul>
+          </div>
+        </aside>
+        <section class="main__part">
+          <div class="main__wrapper">
+          </div>
+        </section>  
+      </div>
+    </main>
+  </div>
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/nouislider/nouislider.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
